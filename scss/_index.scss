@@ -1,0 +1,250 @@
+
+.heading-title-primary {
+  font-size: 50px;
+}
+
+.heading-des-primary {
+  font-size: 18px;
+}
+
+.heading-primary {
+    border-top: 6px solid #5F7C6A;
+    padding-top: 20px;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: #5F7C6A;
+}
+
+.arrow-slide-primary {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 50px;
+      height: 50px;
+      margin-top: 0;
+      background: transparent;
+      border-radius: 50%;
+      border: 1px solid #999;
+      color: #999;
+      transform: translateY(-50%);
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background:#e9bc25;
+      border-color: #e9bc25;
+      color: #fff;
+
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 20px;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+      /* opacity: 1; */
+      cursor: auto;
+      pointer-events: none;
+      background: transparent;
+      border-color: #999;
+    }
+    &--white {
+        .swiper-button-next,
+        .swiper-button-prev {
+          border-color: #fff;
+          color: #fff;
+        }
+
+        .swiper-button-next.swiper-button-disabled,
+        .swiper-button-prev.swiper-button-disabled {
+          border-color: #fff;
+        }
+    }
+   
+}
+
+.same-height {
+  .swiper-wrapper {
+    display: flex;
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto; 
+  }
+  .article {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .article-img {
+    flex-shrink: 0;
+  }
+  .article-content {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.hidden.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.author-primary {
+    .author-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+}
+.author-secondary {
+    .author-img {
+        width: 84px;
+        height: 84px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+}
+.author-tertiary {
+    .author-img {
+        width: 68px;
+        height: 68px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    }
+}
+
+.section-primary {
+    &__bg {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        user-select: none;
+        img {
+            max-width: 358px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__content {
+        .line {
+            width: 87px;
+            height: 1px;
+            background-color: #333;
+            margin-top: 30px;
+        }
+    }
+
+    &__des {
+        max-width: 438px;
+    }
+}
+
+.section-tertiary {
+  .article {
+    &-img {
+        border-radius: 999px;
+      width: 127px;
+      height: 127px;
+    }
+  }
+}
+
+.section-quaternary {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+    top: auto;
+  }
+}
+
+.section-quinary {
+  &__content {
+    .article {
+        padding: 45px 115px;
+    }
+
+    .article-quote-left {
+        margin-right: 10px;
+        margin-top: -10px;
+        flex-shrink: 0;
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+    .article-quote-right {
+        margin-right: 10px;
+        transform: rotate(180deg);
+        flex-shrink: 0;
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
+  }
+  
+}
+
+
