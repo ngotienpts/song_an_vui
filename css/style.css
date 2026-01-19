@@ -128,16 +128,34 @@ table {
 }
 
 @font-face {
-  font-family: "SVG-Book-Antiqua";
+  font-family: "Helvetica-neue";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/SVN-Book-Antiqua/SVN-Book-Antiqua.ttf") format("truetype");
+  src: url("../fonts/helvertical-neue/helvetica-neue-regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "SVG-Book-Antiqua";
+  font-family: "Helvetica-neue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/helvertical-neue/helvetica-neue-medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica-neue";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/SVN-Book-Antiqua/SVN-Book-Antiqua-bold.ttf") format("truetype");
+  src: url("../fonts/helvertical-neue/HelveticaNeue-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/verdana/verdana.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/verdana/verdanab.ttf") format("truetype");
 }
 html {
   box-sizing: border-box;
@@ -160,7 +178,7 @@ html {
 
 body {
   position: relative;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Verdana", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   font-style: normal;
@@ -179,7 +197,7 @@ textarea,
 select,
 button {
   outline: none;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Verdana", sans-serif;
   text-rendering: geometricPrecision;
   border: 0;
   color: #333;
@@ -241,8 +259,8 @@ p + p {
   font-family: "Arial", sans-serif;
 }
 
-.font-antiqua {
-  font-family: "SVG-Book-Antiqua";
+.font-helvetica-neue {
+  font-family: "Helvetica-neue", sans-serif;
 }
 
 /*===========================================================================*/
@@ -277,6 +295,10 @@ p + p {
   width: 35%;
 }
 
+.w-39 {
+  width: 39%;
+}
+
 .w-40 {
   width: 40%;
 }
@@ -303,6 +325,10 @@ p + p {
 
 .w-55 {
   width: 55%;
+}
+
+.w-59 {
+  width: 59%;
 }
 
 .w-60 {
@@ -1474,6 +1500,10 @@ p + p {
   align-items: center;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -1565,6 +1595,11 @@ p + p {
 .gap-40 {
   grid-gap: 2.5rem;
   gap: 2.5rem;
+}
+
+.gap-50 {
+  grid-gap: 50px;
+  gap: 50px;
 }
 
 /*=================================================================*/
@@ -1754,6 +1789,14 @@ p + p {
 .inset-0 img {
   width: 100%;
   height: 100%;
+}
+
+.last-article-py-0 .article:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.last-article-py-0 .article:first-child {
+  padding-top: 0;
 }
 
 .header {
@@ -2110,7 +2153,7 @@ p + p {
 }
 
 .heading-des-primary {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .heading-primary {
@@ -2194,8 +2237,8 @@ p + p {
 }
 
 .author-primary .author-img {
-  width: 30px;
-  height: 30px;
+  width: 39px;
+  height: 39px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -2259,6 +2302,50 @@ p + p {
   object-fit: cover;
 }
 
+.author-quaternary .author-img {
+  width: 74px;
+  height: 74px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.author-quaternary .author-img a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-quaternary .author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-quinary .author-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.author-quinary .author-img a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.author-quinary .author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section-primary__bg {
   position: absolute;
   top: 40%;
@@ -2279,7 +2366,7 @@ p + p {
   margin-top: 30px;
 }
 .section-primary__des {
-  max-width: 438px;
+  max-width: 500px;
 }
 
 .section-tertiary .article-img {
@@ -2294,7 +2381,7 @@ p + p {
 }
 
 .section-quinary__content .article {
-  padding: 45px 115px;
+  padding: 45px 55px;
 }
 .section-quinary__content .article-quote-left {
   margin-right: 10px;
@@ -2966,6 +3053,18 @@ p + p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .items-md-center {
+    align-items: center;
+  }
+
+  .fs-md-24 {
+    font-size: 24px;
+  }
+
+  .fs-md-18 {
+    font-size: 18px;
+  }
+
   .gap-md-10 {
     grid-gap: 0.625rem;
     gap: 0.625rem;
@@ -2989,6 +3088,10 @@ p + p {
 
   .mb-md-20 {
     margin-bottom: 20px;
+  }
+
+  .p-md-20 {
+    padding: 20px;
   }
 
   .py-md-30 {
@@ -3017,6 +3120,10 @@ p + p {
     margin-top: 40px;
   }
 
+  .fs-md-14 {
+    font-size: 14px;
+  }
+
   .border-md-10 {
     border-radius: 10px;
   }
@@ -3043,18 +3150,27 @@ p + p {
     font-size: 32px;
   }
 
-  .author-secondary,
-.author-tertiary {
+  .author-primary,
+.author-secondary,
+.author-tertiary,
+.author-quaternary,
+.author-quinary {
     margin-top: 12px;
     flex-direction: row;
   }
-  .author-secondary .author-img,
-.author-tertiary .author-img {
+  .author-primary .author-img,
+.author-secondary .author-img,
+.author-tertiary .author-img,
+.author-quaternary .author-img,
+.author-quinary .author-img {
     width: 30px;
     height: 30px;
   }
-  .author-secondary .author-name,
-.author-tertiary .author-name {
+  .author-primary .author-name,
+.author-secondary .author-name,
+.author-tertiary .author-name,
+.author-quaternary .author-name,
+.author-quinary .author-name {
     text-align: left;
     padding-left: 10px;
   }
@@ -3093,6 +3209,25 @@ p + p {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .section-senary .article-large .article-content {
+    flex-direction: column;
+    grid-gap: 0;
+    gap: 0;
+    padding: 20px;
+  }
+  .section-senary .article-large .article-info {
+    order: 1;
+  }
+  .section-senary .article-large .author-tertiary {
+    order: 2;
+  }
+  .section-senary .article-smalls .article {
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .section-senary .article-smalls .article:last-child {
+    border-bottom: none;
   }
 
   .block-primary {
