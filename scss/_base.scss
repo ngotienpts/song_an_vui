@@ -132,6 +132,10 @@ p {
     max-width: 888px;
     margin: 0 auto;
 }
+.w-1080 {
+    max-width: 1080px;
+    margin: 0 auto;
+}
 .w-1280 {
     max-width: 1280px;
     margin: 0 auto;
@@ -191,6 +195,9 @@ p {
 .w-200px {
     width: 200px;
 }
+.w-135px {
+    width: 135px;
+}
 /*=================================================================*/
 .d-3xl-none {
     display: none;
@@ -219,7 +226,7 @@ p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 30px;
+    padding: 14px 40px;
     background-color: #5F7C6A;
     color: #fff;
     outline: none;
@@ -428,6 +435,9 @@ p {
 }
 .text-gray-33 {
     color: #333;
+}
+.text-gray-66 {
+    color: #666;
 }
 .text-gray-77 {
     color: #777;
@@ -1351,6 +1361,12 @@ p {
 .icon-24 {
     img {
         width: 24px;
+        height: auto;
+    }
+}
+.icon-37 {
+    img {
+        width: 37px;
         height: auto;
     }
 }

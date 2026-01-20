@@ -90,3 +90,188 @@
         position: relative;
     }
 }
+
+
+// donate
+.dot-span {
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: #5F7C6A;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    &--medium {
+        &::before {
+            width: 6px;
+            height: 6px;
+        }
+    }
+
+    &--black {
+        &::before {
+            background-color: #000;
+        }
+    }
+}
+
+.donate-primary {
+    &__bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        user-select: none;
+        img {
+            max-width: 358px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.donate-tertiary {
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        pointer-events: none;
+        user-select: none;
+        img {
+            max-width: 358px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// share
+.category-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    border-radius: 999px;
+    padding: 10px 35px;
+    margin: 5px 10px;
+
+    &.active {
+        background-color: #5F7C6A;
+        color: #fff;
+    }
+    &:hover {
+        background-color: #E0EBE4;
+    }
+}
+
+.share-secondary {
+    &__content {
+        .article-top {
+            .article-large {
+                .article-img {
+                    position: relative;
+                }
+                .article-category {
+                    font-size: 14px;
+                    padding: 6px 15px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background-color: #F7F6F2;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                }
+            }
+
+            .article-smalls {
+                .article-img {
+                    position: relative;
+                }
+                .article-category {
+                    font-size: 12px;
+                    padding: 6px 15px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background-color: #F7F6F2;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 12px;
+                }
+            }
+        }
+        .article-bot {
+            .article-img {
+                position: relative;
+            }
+            .article-category {
+                font-size: 14px;
+                padding: 6px 15px;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: #F7F6F2;
+                position: absolute;
+                bottom: 12px;
+                left: 12px;
+            }
+        }
+    }
+}
+
+.pagination {
+    flex-wrap: wrap;
+    &-item {
+        margin: 4px;
+       
+        &.active {
+            .pagination-link {
+                background-color: #5F7C6A;
+                color: #fff;
+            }
+            &.next,
+            &.prev {
+                .pagination-link {
+                    background-color: #E0EBE4;
+                    color: #666;
+                }
+            }
+        }
+        &.next,
+        &.prev {
+            .pagination-link {
+                &:hover{
+                    background-color: #E0EBE4;
+                    color: #666;
+                }
+            }
+        }
+    }
+    &-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #E9E9E9;
+        background-color: #E9E9E9;
+        transition: all 0.2s;
+        color: #666;
+
+        &:hover {
+            background-color: #5F7C6A;
+            color: #fff;
+        }
+    }
+}
