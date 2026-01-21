@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var prev = item.querySelector(".swiper-button-prev");
                 var pagi = item.querySelector(".swiper-pagination");
                 new Swiper(slider, {
-                    slidesPerView: 1,
+                    slidesPerView: 1.2,
                     spaceBetween: 15,
                     slidesPerGroup: 1,
                     navigation: {
