@@ -47,6 +47,30 @@ document.addEventListener("DOMContentLoaded", function () {
       
     }
 
+    // xử lý sự kiện chuyển tab
+    function handleChangeTab () {
+        const changTabs = document.querySelectorAll('.js__changeTab')
+
+        if (changTabs.length === 0) return;
+
+        changTabs.forEach((changTab)=>{
+            const tabs = changTab.querySelectorAll(".js__tabItem");
+            const panes = changTab.querySelectorAll(".js__tabPane");
+
+            tabs.forEach((tab,index)=>{
+                tab.onclick = function() {
+                    pane = panes[index]
+
+                    changTab.querySelector('.js__tabItem.active').classList.remove('active')
+                    changTab.querySelector('.js__tabPane.active').classList.remove('active')
+
+                    this.classList.add('active')
+                    pane.classList.add('active')
+                }
+            })
+        })
+    }
+
     // Khởi tạo slider với một item
     function initSliderOneItems() {
         const oneSlides = document.querySelectorAll(".js__oneSlidesContainer");
@@ -223,6 +247,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
     }
+    // xử lý xoa text input phat nguoi
+    function handleClearInputWrapperPhatNguoi () {
+        const inputWrapperPhatNguois = document.querySelectorAll(".js__inputWrapperPhatNguoi");
+        if (inputWrapperPhatNguois.length === 0) return;
+        inputWrapperPhatNguois.forEach((inputWrapperPhatNguois) => {
+            var inputPhatNguoi = inputWrapperPhatNguois.querySelector(".js__inputPhatNguoi");
+            var clearInputPhatNguoi = inputWrapperPhatNguois.querySelector(".js__clearInputPhatNguoi");
+            
+            
+            clearInputPhatNguoi.onclick = function () {
+                inputPhatNguoi.value = "";
+                inputPhatNguoi.focus();
+            };
+        });
+        
+    }
 
 
 
@@ -285,10 +325,11 @@ document.addEventListener("DOMContentLoaded", function () {
         handleShowSearchMb();
         handleMenuMobile();
         handleShowDropdown();
+        handleChangeTab();
+        handleClearInputWrapperPhatNguoi();
         // slide
         initSliderOneItems();
         initSliderThreeItems();
-        
         // end slide
         handleBackTop();
         initFancybox();

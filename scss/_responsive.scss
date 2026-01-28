@@ -796,6 +796,39 @@
             }
         }
     }
+
+    // phat nguoi
+    .phat-nguoi-primary {
+        &__content {
+            .top-item {
+                font-size: 12px;
+            }
+            .input-group .material-textfield.select-wrapper {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            .input-group > .form-select {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            input,select {
+                font-size: 14px !important;
+            }
+
+            .alert {
+                font-size: 14px;
+            }
+            .btn-primary,
+            .btn.btn-outline-primary {
+                font-size: 14px;
+            }
+            .clear-button {
+                padding: 3px 10px;
+                font-size: 12px;
+            }
+        }
+    }
     // --------------------------------------------------------------------detail
     p + p {
         margin-top: 20px;
