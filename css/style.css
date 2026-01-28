@@ -2988,6 +2988,97 @@ p + p {
   background-color: #ea1e63;
   border-color: #ea1e63;
 }
+.phat-nguoi-primary__content .alert-warning {
+  color: #664d03;
+  border-radius: 10px;
+  border: 2px solid #c9c2b0;
+  background: #f1f0ed;
+}
+.phat-nguoi-primary__content .span-cucdangkiem {
+  color: #868686;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+}
+.phat-nguoi-primary__content .status-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.phat-nguoi-primary__content .status-info div {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex: 1 0 0;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+}
+.phat-nguoi-primary__content .status-info__error {
+  color: #c42832;
+}
+.phat-nguoi-primary__content .status-info__success {
+  color: #0e8345;
+}
+.phat-nguoi-primary__content .divider {
+  display: block;
+  width: 1px;
+  height: 24px;
+  background: #ddd;
+}
+.phat-nguoi-primary__content #result .stt {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #000;
+  margin-top: 16px;
+}
+.phat-nguoi-primary__content #alert {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.phat-nguoi-primary__content #alert.show {
+  display: block;
+  opacity: 1;
+}
+.phat-nguoi-primary__content #alert.hide {
+  opacity: 0;
+}
+.phat-nguoi-primary__content .alert table {
+  background-color: #fff;
+}
+.phat-nguoi-primary__content .alert-warning table.table-finished {
+  border: 1px solid #19875491;
+}
+.phat-nguoi-primary__content .btn-primary.disabled, .phat-nguoi-primary__content .btn-primary:disabled {
+  color: #fff;
+  background: #e37f99;
+  border-color: #e37f99;
+}
+.phat-nguoi-primary__content .table-status {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 1px 8px;
+}
+.phat-nguoi-primary__content .table-finished .table-status {
+  color: #198754;
+  border-color: #198754;
+}
+.phat-nguoi-primary__content td:first-child {
+  font-weight: 500;
+}
+.phat-nguoi-primary__content td:last-child {
+  color: rgba(0, 0, 0, 0.8);
+}
 .phat-nguoi-primary__top {
   background-color: #fff;
   box-shadow: 0 48px 80px -32px rgba(0, 0, 0, 0.3);
